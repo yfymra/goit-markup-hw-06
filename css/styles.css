@@ -858,11 +858,10 @@ ul {
 
 .modal-icon {
     position: absolute;
-    top: 38px;
+    top: 26px;
     left: 16px;
     width: 18px;
     height: 24px;
-    transform: translateY(-50%);
 
     fill: currentColor;
 
