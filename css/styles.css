@@ -815,6 +815,8 @@ ul {
 }
 
 .modal-form-field:not(:last-child) {
+    position: relative;
+    display: block;
     margin-bottom: 8px;
 }
 
@@ -830,7 +832,6 @@ ul {
 }
 
 .modal-form-input {
-    position: relative;
     width: 100%;
     color: var(--dark);
 }
@@ -857,10 +858,11 @@ ul {
 
 .modal-icon {
     position: absolute;
-    top: 8px;
+    top: 38px;
     left: 16px;
     width: 18px;
     height: 24px;
+    transform: translateY(-50%);
 
     fill: currentColor;
 
