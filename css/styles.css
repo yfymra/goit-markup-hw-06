@@ -270,6 +270,9 @@ ul {
     margin: -1px;
     border: 0;
     padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -807,8 +810,8 @@ ul {
 .modal-form-title {
     display: inline-block;
     margin-bottom: 16px;
-    font-weight: 500;
-    color: #2E2F42;
+    font-weight: var(--font-size-medium);
+    color: var(--dark);
 }
 
 .modal-form-field:not(:last-child) {
@@ -823,13 +826,13 @@ ul {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: #8E8F99;
+    color: var(--subtle-text);
 }
 
 .modal-form-input {
     position: relative;
     width: 100%;
-    color: #2E2F42;
+    color: var(--dark);
 }
 
 .modal-input {
@@ -838,11 +841,12 @@ ul {
     padding-top: 8px;
     padding-right: 16px;
     padding-bottom: 8px;
-    padding-left: 44px;
+    padding-left: 38px;
     min-height: 40px;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
+
     color: rgba(117, 117, 117, 0.5);
     border: 1px solid;
     border-color: rgba(33, 33, 33, 0.2);
@@ -855,7 +859,7 @@ ul {
     position: absolute;
     top: 8px;
     left: 16px;
-    width: 24px;
+    width: 18px;
     height: 24px;
 
     fill: currentColor;
@@ -890,17 +894,6 @@ ul {
     cursor: pointer;
 }
 
-.form-privacy-checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .form-privacy-label,
 .privacy-link {
     font-size: 12px;
@@ -910,7 +903,7 @@ ul {
 }
 
 .privacy-link {
-    color: #4D5AE5;
+    color: var(--primary-brand);
 }
 
 .form-privacy-icon {
@@ -923,9 +916,9 @@ ul {
     min-width: 16px;
     min-height: 16px;
     border: 1.25px solid;
-    border-color: #2E2F42;
+    border-color: var(--dark);
     border-radius: 2px;
-    color: #F4F4FD;
+    color: var(--light);
 
     transition: background-color var(--transition-duration) var(--transition-timing-function),
     border var(--transition-duration) var(--transition-timing-function);
@@ -961,11 +954,11 @@ ul {
     padding-bottom: 16px;
     padding-left: 32px;
 
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.5;
 
-    background: #4D5AE5;
-    color: #FFFFFF;
+    background-color: var(--primary-brand);
+    color: var(--color-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     border-radius: 4px;
