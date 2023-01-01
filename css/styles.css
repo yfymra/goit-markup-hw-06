@@ -808,7 +808,6 @@ ul {
 }
 
 .modal-form-title {
-    display: inline-block;
     margin-bottom: 16px;
     font-weight: var(--font-weight-medium);
     color: var(--dark);
@@ -821,7 +820,6 @@ ul {
 }
 
 .modal-form-label {
-    display: block;
     width: 100%;
     display: block;
     margin-bottom: 4px;
@@ -856,6 +854,12 @@ ul {
     transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
+.modal-icon.icon-person {
+    top: 29px;
+    width: 18px;
+    height: 18px;
+}
+
 .modal-icon {
     position: absolute;
     top: 26px;
@@ -884,18 +888,11 @@ ul {
 
 .form-privacy {
     position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     padding-left: 24px;
     margin-bottom: 24px;
     width: 100%;
-    height: 16px;
     cursor: pointer;
-}
 
-.form-privacy-label,
-.privacy-link {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
@@ -903,18 +900,19 @@ ul {
 }
 
 .privacy-link {
+    letter-spacing: 0.04em;
     color: var(--primary-brand);
 }
 
 .form-privacy-icon {
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 16px;
-    min-height: 16px;
+    width: 16px;
+    height: 16px;
     border: 1.25px solid;
     border-color: var(--dark);
     border-radius: 2px;
@@ -926,8 +924,8 @@ ul {
 
 .icon-check-mark {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
     opacity: 0;
 
     fill: currentColor;
@@ -935,14 +933,12 @@ ul {
     transition: opacity var(--transition-duration) var(--transition-timing-function);
 }
 
-.form-privacy-checkbox:focus + .form-privacy-icon, 
-.form-privacy-checkbox:checked + .form-privacy-icon {
+.form-privacy-checkbox:focus + .form-privacy-icon {
     background-color: var(--pressed-state);
     border: 0;
 }
 
-.form-privacy-checkbox:focus ~ .form-privacy-icon > .icon-check-mark,
-.form-privacy-checkbox:checked  ~ .form-privacy-icon > .icon-check-mark {
+.form-privacy-checkbox:focus + .form-privacy-icon > .icon-check-mark {
     opacity: 1;
 }
 
